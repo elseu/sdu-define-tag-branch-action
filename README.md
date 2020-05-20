@@ -10,14 +10,6 @@ You need to have in the root of your project having a directory called `deploy` 
 
 ### Action
 
-#### Action options
-
-| Prop  | description                                        |
-| ----- | -------------------------------------------------- |
-| ref\* | the `${{ github.ref }}` can be used for this field |
-
-\* = required
-
 ```yaml
 jobs:
   deploy:
@@ -25,8 +17,6 @@ jobs:
     steps:
       - uses: elseu/sdu-define-tag-branch-action@v1
         id: branch_tag
-        with:
-          ref: ${{ github.ref }}
 ```
 
 #### Outputs
