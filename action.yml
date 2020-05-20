@@ -1,5 +1,5 @@
 name: Define tag and branch based on ref variable action
-description: This will help to get a branch and tag name out of the \${{ github.ref }}
+description: "This will help to get a branch and tag name out of the github.ref can be used"
 author: elseu
 branding:
   icon: "terminal"

@@ -1,4 +1,5 @@
 #!/bin/bash
+
 global_rematch() {
   local s=$1 regex=$2
   while [[ $s =~ $regex ]]; do
