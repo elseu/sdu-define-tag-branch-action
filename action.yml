@@ -1,0 +1,22 @@
+name: Define tag and branch based on ref variable action
+description: This will help to get a branch and tag name out of the \${{ github.ref }}
+author: elseu
+branding:
+  icon: "terminal"
+  color: "#EE3324"
+inputs:
+  ref:
+    description: Github ref
+    required: true
+outputs:
+  branch:
+    description: "The branch name if it is a branch otherwise it will return a tag"
+  tag:
+    description: "If it is a tag it will return here a tag other wise it is the branch name"
+  type:
+    description: "Defines what type it is branch or tag (branch / tag)"
+  branch_not_formatted:
+    description: "Branch name not formatted"
+runs:
+  using: docker
+  image: Dockerfile
