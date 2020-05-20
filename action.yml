@@ -3,7 +3,7 @@ description: This will help to get a branch and tag name out of the \${{ github.
 author: elseu
 branding:
   icon: "terminal"
-  color: "#EE3324"
+  color: "red"
 inputs:
   ref:
     description: Github ref
