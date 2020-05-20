@@ -9,8 +9,8 @@ global_rematch() {
 }
 
 if [ -z "$TAG" ]; then
-  TAG=$(global_rematch $INPUT_REF "refs\/tags\/(.*)")
-  BRANCH=$(global_rematch $INPUT_REF "refs\/heads\/(.*)")
+  TAG=$(global_rematch $GITHUB_REF "refs\/tags\/(.*)")
+  BRANCH=$(global_rematch $GITHUB_REF "refs\/heads\/(.*)")
 fi
 
 # TAG

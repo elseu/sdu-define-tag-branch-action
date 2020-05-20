@@ -4,10 +4,6 @@ author: elseu
 branding:
   icon: "terminal"
   color: "red"
-inputs:
-  ref:
-    description: Github ref
-    required: true
 outputs:
   branch:
     description: "The branch name if it is a branch otherwise it will return a tag"
