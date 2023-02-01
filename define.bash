@@ -25,7 +25,7 @@ fi
 BRANCH_LOWER=$BRANCH
 BRANCH=$(echo $BRANCH | tr '[:lower:]' '[:upper:]')
 
- echo "::set-output name=branch_not_formatted::$BRANCH_LOWER"
- echo "::set-output name=branch::$BRANCH"
- echo "::set-output name=tag::$TAG"
- echo "::set-output name=type::$TYPE"
+ echo "branch_not_formatted=$BRANCH_LOWER" >> $GITHUB_OUTPUT
+ echo "branch=$BRANCH" >> $GITHUB_OUTPUT
+ echo "tag=$TAG" >> $GITHUB_OUTPUT
+ echo "type=$TYPE" >> $GITHUB_OUTPUT
