@@ -1,0 +1,15 @@
+apiVersion: backstage.io/v1beta1
+kind: Component
+metadata:
+  name: sdu-define-tag-branch-action
+  description: "Define environment variable tag and branch"
+  annotations:
+    github.com/project-slug: elseu/sdu-define-tag-branch-action
+    backstage.io/source-location: url:https://github.com/elseu/sdu-define-tag-branch-action/
+  tags:
+    - github-actions
+    - shell
+spec:
+  type: workflow
+  owner: team-devops
+  lifecycle: development-only
